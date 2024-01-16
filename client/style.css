@@ -1,3 +1,28 @@
 * {
-    color: blue;
+    color: black;
+    margin: 0px;
+}
+
+#navbar {
+    display: flex;
+    width: 100vw;
+    height: 8.2vh;
+    justify-content: space-evenly;
+    align-items: center;
+    border-bottom: 2px solid black;
+    border-top: 2px solid black;
+    box-shadow: 10px 10px 50px black;
+}
+
+#about-div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 100px;
+
+    #me-img {
+        height: 400px;
+        width: 300px;
+        border-radius: 100%;
+    }
 }

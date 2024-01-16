@@ -1,12 +1,23 @@
 import React from "react";
+import { Routes,Route} from "react-router";
+import { HashRouter } from "react-router-dom";
+import NavBar from "./NavBar.jsx";
+import About from "./About.jsx";
 
 const App = () => {
     return (
-        <div>
-            <h1>Justin's Site</h1>
-            <h2>Something about me</h2>
-            <p>Charlie really my biggest fan</p>
-        </div>
+        <HashRouter>
+            <div>
+                <NavBar/>
+            </div>
+            <Routes>
+                <Route path="/about" element={<About/>}></Route>
+                <Route path="/about" element={<About/>}></Route>
+                <Route path="/about" element={<About/>}></Route>
+                <Route path="/about" element={<About/>}></Route>
+
+            </Routes>
+        </HashRouter>
     )
 }
 
